@@ -30,7 +30,14 @@ module.exports = {
       lang: 'en-US',
       title: 'IPFS Docs',
       description: 'IPFS Documentation'
+    },
+    // ➕ Добавяте българска локация
+    '/bg/': {
+      lang: 'bg-BG', // Езиков код за български
+      title: 'IPFS Документация',
+      description: 'Документация за IPFS на български език'
     }
+  },
   },
   markdown: {
     pageSuffix,
@@ -112,6 +119,37 @@ module.exports = {
                 ['/how-to/websites-on-ipfs/deploy-github-action', 'Deploy to IPFS with GitHub Actions' ],
               ]
             },
+            // ➕ Българска конфигурация на темата
+      '/bg/': {
+        label: 'Български',       // Текст в падащото меню
+        selectText: 'Езици',      // Текст на бутона за избор на език
+        ariaLabel: 'Избор на език',
+        editLinkText: 'Редактирай тази страница',
+        lastUpdated: 'Последна промяна',
+        // Тук трябва да дефинирате nav и sidebar за български
+        nav: require('./nav/bg'), // Препоръчително: отделен файл за навигацията
+        sidebar: {
+          // Sidebar-ът трябва да сочи към /bg/ пътищата
+          '/bg/install/': [
+            ['/bg/concepts/what-is-ipfs', 'Основни концепции'],
+            {
+              title: 'Бърз старт',
+              children: [
+                ['/bg/quickstart/retrieve', 'Извличане от IPFS'],
+                // ...
+              ]
+            },
+            // ...
+          ],
+          '/bg/concepts/': [
+            // ... sidebar за концепции на български
+          ],
+          // ... и така за всички останали секции
+        }
+      }
+    }
+  }
+}
             {
               title: 'Install',
               sidebarDepth: 1,
