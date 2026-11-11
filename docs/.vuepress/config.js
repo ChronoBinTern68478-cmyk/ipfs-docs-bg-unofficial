@@ -23,7 +23,7 @@ module.exports = {
       hashFunction: "sha256"
     }
   },
-  base: '/',
+  base: '/ipfs-docs-bg-unofficial',
   head: require('./head'),
   locales: {
     '/': {
