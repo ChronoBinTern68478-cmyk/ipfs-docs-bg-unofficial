@@ -152,7 +152,7 @@ module.exports = {
               sidebarDepth: 1,
               collapsable: true,
               children: [
-                  '/concepts/what-is-ipfs',
+                  'concepts/what-is-ipfs',
                   '/concepts/ipfs-solves',
                   '/concepts/how-ipfs-works',
               ]
@@ -565,4 +565,5 @@ module.exports = {
     'tabs'
   ],
   extraWatchFiles: ['.vuepress/nav/en.js']
+  }
 }
