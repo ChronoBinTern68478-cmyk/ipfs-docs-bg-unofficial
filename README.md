@@ -1,4 +1,4 @@
-# Неофисиален превод на ipfs
+# Неофисиален превод на ipfs docs
 
 👉 [Отвори ipfs-docs-bg-unofficial](https://chronobintern68478-cmyk.github.io/ipfs-docs-bg-unofficial/bg/)
 
